@@ -29,8 +29,8 @@ def find_mismatch(text):
 
 
 def main():
-    ievade = input("Enter 'F' or 'I': ")
-    if ievade == "I":
+    ievade = input()
+    if "I" in ievade:
        text = input()
        mismatch = find_mismatch(text)
        if mismatch == "0":
