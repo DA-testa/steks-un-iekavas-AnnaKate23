@@ -16,7 +16,6 @@ def find_mismatch(text):
             opening_brackets_stack.append(Bracket(next, i+1))
             # Process opening bracket, write your code here
             
-
         if next in ")]}":
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
                 return i+1
@@ -29,14 +28,14 @@ def find_mismatch(text):
 
 
 def main():
-    ievade = input()
-    if "I" in ievade:
-       text = input()
-    mismatch = find_mismatch(text)
-    if mismatch == "Success":
-       print("Success")
-    else:
-       print(mismatch)
+   ievade = input()
+   if "I" in ievade:
+     text = input()
+   mismatch = find_mismatch(text)
+   if mismatch == "Success":
+     print("Success")
+   else:
+     print(mismatch)
         
     # Printing answer, write your code here
 
